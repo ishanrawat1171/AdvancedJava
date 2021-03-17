@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        
+        
+         .centre {
+            border-radius: 5px;
+            background-color: #f7d127;
+            padding: 20px;
+            height: 1050px;
+            width: 400px;
+
+            margin-left: 2rem;
+        }
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+
+</style>
+</head>
+<body>
+<div class="centre">
+
+<br>
+
+<h1 style="text-align: center; ">Player Details</h1>
+<div class="middle">
+
+
+<form action="./InsertPlayerServlet" method="post">
+Player Id: <input type="number" name="Playerid"> <br><br>
+Player TeamId: <input type="number" name="Teamid"> <br><br>
+Player Name: <input type="text" name="Name"><br><br>
+Player DOB: <input type="text" name="DOB"><br><br>
+Player Email: <input type="text" name="Email"><br><br>
+Player Matches: <input type="number" name="Matches"> <br><br>
+Player Runs: <input type="number" name="Runs"> <br><br>
+Player Wickets: <input type="number" name="Wickets"> <br><br>
+Player Achievements: <input type="text" name="Achievements"><br><br>
+
+<input type="submit" value="Add Player">
+
+</form>
+</div>
+</div>
+</body>
+</html>
